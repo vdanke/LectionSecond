@@ -19,9 +19,13 @@ public class LinksToMethods {
 
         Consumer<String> secondEdition = System.out::println;
 
+        // Ссылка на статический метод
         Function<Integer, String> integerStringFunction = Integer::toHexString;
+        // Ссылка на не статический метод
         Comparator<Integer> integerComparator = Integer::compareTo;
+        // Ссылка на метод проинициализированного объекат
         Function<Integer, String> stringFunction = linksToMethods::getString;
+        // Ссылка на конструктор
         Supplier<List<Integer>> listSupplier = ArrayList::new;
 
         List<Integer> integers = listSupplier.get();

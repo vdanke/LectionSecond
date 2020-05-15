@@ -10,7 +10,7 @@ public class OptionalExample {
     public static void main(String[] args) {
         Map<Integer, String> integerStringMap = new HashMap<>();
         List<List<String>> stringListList = new ArrayList<>();
-
+        
         stringListList.add(new ArrayList<>(Collections.singletonList("First")));
         stringListList.add(new ArrayList<>(Collections.singletonList("Second")));
         stringListList.add(new ArrayList<>(Collections.singletonList("Third")));

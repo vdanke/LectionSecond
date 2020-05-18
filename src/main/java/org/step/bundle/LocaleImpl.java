@@ -7,11 +7,17 @@ public class LocaleImpl {
 
     private ResourceBundle bundle;
 
-    public LocaleImpl(Locale locale) {
-        bundle = ResourceBundle.getBundle("locale", locale);
+    public LocaleImpl() {
+        // 1 argument - название
+        // 2 argument - локаль
+        bundle = ResourceBundle.getBundle("locale", new Locale("en", "US"));
     }
 
     public String getValue(String key) {
         return bundle.getString(key);
+    }
+
+    public void setLocale(Locale locale) {
+        bundle = ResourceBundle.getBundle("locale", locale);
     }
 }
